@@ -1,7 +1,7 @@
 pipeline {
   agent none
   environment {
-    PASSWORD = credentials('654321')
+    PASSWORD = credentials('654321')  //refer secret documentation (https://www.way2automation.com/environment-variables-and-credentials-usage-in-jenkins-pipelines/)
   }
     stages {
       stage('create image') {
